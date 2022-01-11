@@ -58,4 +58,18 @@ GO
 EXEC HeavyToys
 EXEC PriceIncrease
 EXEC QtyOnHand
+GO
 
+--định nghĩa
+sp_helptext HeavyToys
+sp_helptext PriceIncrease
+sp_helptext QtyOnHand
+GO
+
+--hiển thị các đối tượng phụ thuộc 
+EXEC sp_depends HeavyToys
+EXEC sp_depends PriceIncrease
+EXEC sp_depends QtyOnHand
+GO
+
+--cho phép hiển thị giá trị mới đã được cập nhật (UnitPrice, QtyOnHnad)
