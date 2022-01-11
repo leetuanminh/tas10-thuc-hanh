@@ -54,3 +54,8 @@ AS GiamSoLuong
 FROM Toys
 GO
 
+--Thực hiện 3 thủ tục trên
+EXEC HeavyToys
+EXEC PriceIncrease
+EXEC QtyOnHand
+
